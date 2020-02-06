@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+
+        <span class="navbar-menu">
+            <a href="#" onclick="openmenu()" >
+                <svg width="30" height="30">
+                    <path d="M0,7 30,7" stroke="#FFE69D" stroke-width="5"/>
+                    <path d="M0,16 30,16" stroke="#FFE69D" stroke-width="5"/>
+                    <path d="M0,25 30,25" stroke="#FFE69D" stroke-width="5"/>    
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+        </ul>
+    </nav>
+
+    <div id="left-menu">
+        <a href="#" onclick="closemenu()" class="btnclose" style="font-size: 36px;">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">One</a>
+        <a href="#">Two</a>
+        <a href="#">Three</a>
+    </div>
+
+    <div id="main">
+        <h1>Hi~ Man!</h1>
+    </div>
+
+    <script>
+        function openmenu(){
+            document.getElementById("left-menu").style.width="250px";
+            document.getElementById("main").style.marginLeft="250px";
+        }
+        function closemenu(){
+            document.getElementById("left-menu").style.width="0";
+            document.getElementById("main").style.marginLeft="0";
+        }
+    </script>
+</body>
+
+</html>
